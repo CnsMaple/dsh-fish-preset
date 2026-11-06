@@ -1,6 +1,9 @@
 {
   "name": "dsh-fish-preset",
   "version": "0.1.0",
+  "repository": { "type": "git", "url": "git+https://github.com/CnsMaple/dsh-fish-preset.git" },
+  "homepage": "https://github.com/CnsMaple/dsh-fish-preset#readme",
+  "bugs": { "url": "https://github.com/CnsMaple/dsh-fish-preset/issues" },
   "description": "Fish：基于 ptc 的 DSH agent 预设，额外启用 apply_patch（一次调用完成多文件补丁编辑）。",
   "icon": "assets/icon.svg",
   "type": "module",

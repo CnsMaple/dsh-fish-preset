@@ -12,15 +12,15 @@
 打开 DSH Web GUI 侧边栏的 **Plugins（插件）** 页面 → 安装 → 粘贴下面任一地址：
 
 ```
-github:<你的GitHub用户名>/dsh-fish-preset
+github:CnsMaple/dsh-fish-preset
 ```
 
-或仓库地址 `https://github.com/<你的GitHub用户名>/dsh-fish-preset`。安装完成后插件默认启用；到 **设置 → Agent 预设** 里选择 **Fish** 即可（新建会话才会生效）。
+或仓库地址 `https://github.com/CnsMaple/dsh-fish-preset`。安装完成后插件默认启用；到 **设置 → Agent 预设** 里选择 **Fish** 即可（新建会话才会生效）。
 
 ### 方式二：命令行
 
 ```sh
-dsh plugin --profile web add github:<你的GitHub用户名>/dsh-fish-preset
+dsh plugin --profile web add github:CnsMaple/dsh-fish-preset
 ```
 
 这条命令等价于在 profile 目录里 `pnpm add`，只把包装进依赖；还需要把它加进 profile 的 bundle 列表（**Plugins 页面启用一次**即可，或手动把 `dsh-fish-preset` 加入 `$DSH_HOME/profiles/web/package.json` 的 `dsh.profile.bundles`）。
