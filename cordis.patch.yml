@@ -173,16 +173,6 @@
             name: '@deepseek-ai/dsh-tool-executor-ptc'
           - id: present
             name: '@deepseek-ai/dsh-tool-present'
-          # Magpie 的 MCP 客户端：连本机 magpie 网关的 MCP hub，把这些 server 的工具
-          # 注册为 mcp__magpie__<tool>（在 run_code 里用 tools["mcp__magpie__magpie-browser__browser"](...) 调用）。
-          # 网关不在（magpie 没运行）时不报错，只是没有这些工具；serverName 必须唯一。
-          - id: magpie-mcp-magpie
-            name: '@deepseek-ai/dsh-mcp-client'
-            config:
-              serverName: "magpie"
-              transport: "streamable-http"
-              url: "http://127.0.0.1:3425/mcp/magpie/hub/dsh@wsl:Arch"
-              failOnStartupError: false
           - id: tool-plugin-manager
             name: '@deepseek-ai/dsh-plugin-manager/tools'
             disabled: true
